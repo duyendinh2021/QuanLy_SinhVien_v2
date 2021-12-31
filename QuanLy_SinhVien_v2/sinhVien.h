@@ -1,6 +1,8 @@
 #pragma once
 #include<iostream>
 #include<string>
+#include<stdio.h>
+#include <conio.h>
 using namespace std;
 class sinhVien
 {
@@ -51,6 +53,7 @@ public:
 	}
 	void nhap() {
 		cout << "\nNhap Vao MSSV:";
+		cin.ignore(1);
 		getline(cin, this->Mssv);
 		cout << "\nNhap Vao Hoc Ten:";
 		getline(cin, this->hoTen);
